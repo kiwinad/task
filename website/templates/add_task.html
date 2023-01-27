@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
+rel="stylesheet"
+/>
+<!-- bootstrap -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+<!-- my css -->
+<link rel="stylesheet" href="{{url_for('static', filename='add_task.css')}}">
+  <title>Document</title>
+</head>
+<body>
+  <div id="container">
+    <h1>הוסף משימה</h1>
+    <!-- whos task it is -->
+      <div>
+      <select class="select" id="whos-task">
+        <option selected="selected" value="0">למי להביא את המשימה</option>
+        <option value="1">קהד</option>
+        <option value="2">קמבץ</option>
+        <option value="3">מפקד יחידת הדרכה</option>
+        <option value="4">קאגית</option>
+        <option value="5">קבטח</option>
+        <option value="6">פרויקטור אגם</option>
+        <option value="7">ע קצין אגם</option>
+      </select>
+    </div>
+     <!-- date to do the task -->
+     <input type="text" id="text-date" placeholder="תאריך ביצוע">
+     <input hidden type="date"  id="date-input">    
+    <!-- harry tasks -->
+    <div class="harry">
+    <h3 style="margin-bottom: 5px;">:דחיפות</h3>
+    <div id="btn-group">
+      <button type="button" class="btn btn-outline-dark one" data-mdb-ripple-color="dark">לא דחוף</button>
+      <button type="button" class="btn btn-outline-dark two" data-mdb-ripple-color="dark">דחוף</button>
+      <button type="button" class="btn btn-outline-dark three" data-mdb-ripple-color="dark">דחוף מאוד</button>
+    </div>
+    </div>
+  
+  <!-- the task -->
+  <textarea name="task" id="task" cols="30" rows="10"></textarea>
+  <button id="submit" class="btn btn-primary">Primary</button>
+
+</div>
+
+
+
+  <!-- MDB -->
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
+    <script
+    type="text/javascript"
+   src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"
+  ></script>
+
+<!-- bootstrap -->
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+<!-- my script -->
+<script src="{{url_for('static', filename='add_task.js')}}"></script>
+</body>
+</html>

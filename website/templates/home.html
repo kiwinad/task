@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item" onclick="window.location.href = '/add-task'">קצין אגם</div>
+        <div class="grid-item" onclick="window.location.href = '/tasks?user=קהד&id=1'">קהד</div>
+        <div class="grid-item" onclick="window.location.href = '/tasks?user=קמבץ&id=2'">קמבץ</div> 
+        <div class="grid-item" onclick="window.location.href = '/tasks?user=מפקד יחידת הדרכה&id=3'">מפקד יחידת הדרכה</div>
+        <div class="grid-item" onclick="window.location.href = '/tasks?user=קאגית&id=4'">קאגית</div>
+        <div class="grid-item" onclick="window.location.href = '/tasks?user=קבטח&id=5'">קבטח</div>  
+        <div class="grid-item" onclick="window.location.href = '/tasks?user=פרויקטור אגם&id=6'">פרויקטור אגם</div>
+        <div class="grid-item" onclick="window.location.href = '/tasks?user=ע קצין אגם&id=7'">ע קצין אגם</div>  
+      </div>
+      <style>
+        .grid-container {
+            display: grid;
+            row-gap: 20px;
+            grid-template-columns: auto;
+            padding: 10px;
+          }
+        
+          .grid-item {
+            border: 1px solid rgba(0, 0, 0);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+          }
+      </style>
+</body>
+</html>

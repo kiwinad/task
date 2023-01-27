@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+p{
+    padding-right: 5px;
+}
+
+.grid-container {
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: auto;
+    padding: 10px;
+    column-gap: 15px;
+  }
+
+  .grid-item {
+    border: 1px solid rgba(0, 0, 0);
+    text-align: right;
+  }
+
+  .task-info >label{
+    margin-right: 20px;
+  }
+
+.btn-div {
+    text-align: center;
+    margin-bottom: 5px;
+}
